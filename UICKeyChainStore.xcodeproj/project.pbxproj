@@ -16,7 +16,7 @@
 		B4E7D7241678F1B400C01DFA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = "usr/local/include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
 				B4E7D72F1678F1B400C01DFA /* UICKeyChainStore.h in CopyFiles */,
@@ -234,6 +234,7 @@
 				B4E7D7361678F1B400C01DFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
