@@ -285,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICKeyChainStore/UICKeyChainStore-Prefix.pch";
 				INFOPLIST_FILE = "UICKeyChainStore/UICKeyChainStore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -303,6 +304,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICKeyChainStore/UICKeyChainStore-Prefix.pch";
 				INFOPLIST_FILE = "UICKeyChainStore/UICKeyChainStore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
