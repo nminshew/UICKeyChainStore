@@ -33,7 +33,7 @@
 		B457F244168E0F3F0069ADF5 /* UICKeyChainStore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UICKeyChainStore-Info.plist"; sourceTree = "<group>"; };
 		B457F246168E0F3F0069ADF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B457F248168E0F3F0069ADF5 /* UICKeyChainStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-Prefix.pch"; sourceTree = "<group>"; };
-		B4E7D7261678F1B400C01DFA /* libUICKeyChainStoreLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUICKeyChainStoreLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E7D7261678F1B400C01DFA /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E7D7291678F1B400C01DFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B4E7D72D1678F1B400C01DFA /* UICKeyChainStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-Prefix.pch"; sourceTree = "<group>"; };
 		B4E7D72E1678F1B400C01DFA /* UICKeyChainStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		B4E7D7271678F1B400C01DFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4E7D7261678F1B400C01DFA /* libUICKeyChainStoreLib.a */,
+				B4E7D7261678F1B400C01DFA /* libUICKeyChainStore.a */,
 				B457F240168E0F3F0069ADF5 /* UICKeyChainStore.framework */,
 			);
 			name = Products;
@@ -171,7 +171,7 @@
 			);
 			name = UICKeyChainStoreLib;
 			productName = UICKeyChainStore;
-			productReference = B4E7D7261678F1B400C01DFA /* libUICKeyChainStoreLib.a */;
+			productReference = B4E7D7261678F1B400C01DFA /* libUICKeyChainStore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -365,9 +365,9 @@
 				GCC_PREFIX_HEADER = "UICKeyChainStore/UICKeyChainStore-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/UICKeyChainStore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/UICKeyChainStore;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = UICKeyChainStore;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -380,9 +380,9 @@
 				GCC_PREFIX_HEADER = "UICKeyChainStore/UICKeyChainStore-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/UICKeyChainStore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/UICKeyChainStore;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = UICKeyChainStore;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
