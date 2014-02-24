@@ -360,6 +360,7 @@
 		B4E7D7351678F1B400C01DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DSTROOT = /tmp/UICKeyChainStore.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICKeyChainStore/UICKeyChainStore-Prefix.pch";
@@ -375,6 +376,7 @@
 		B4E7D7361678F1B400C01DFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DSTROOT = /tmp/UICKeyChainStore.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICKeyChainStore/UICKeyChainStore-Prefix.pch";

@@ -129,7 +129,7 @@ static NSString *defaultService;
             
             status = SecItemUpdate((CFDictionaryRef)query, (CFDictionaryRef)attributesToUpdate);
             if (status != errSecSuccess) {
-                NSLog(@"%s|SecItemUpdate: error(%ld)", __func__, status);
+                NSLog(@"%s|SecItemUpdate: error(%d)", __func__, (int)status);
             }
         } else {
             [self removeItemForKey:key service:service accessGroup:accessGroup];
@@ -149,10 +149,10 @@ static NSString *defaultService;
 		
 		status = SecItemAdd((CFDictionaryRef)attributes, NULL);
 		if (status != errSecSuccess) {
-			NSLog(@"%s|SecItemAdd: error(%ld)", __func__, status);
+			NSLog(@"%s|SecItemAdd: error(%d)", __func__, (int)status);
 		}		
 	} else {
-		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __func__, status);
+		NSLog(@"%s|SecItemCopyMatching: error(%d)", __func__, (int)status);
 	}
 }
 
@@ -186,7 +186,7 @@ static NSString *defaultService;
 	
 	OSStatus status = SecItemDelete((CFDictionaryRef)itemToDelete);
 	if (status != errSecSuccess && status != errSecItemNotFound) {
-		NSLog(@"%s|SecItemDelete: error(%ld)", __func__, status);
+		NSLog(@"%s|SecItemDelete: error(%d)", __func__, (int)status);
 	}
 }
 
@@ -212,7 +212,7 @@ static NSString *defaultService;
 	if (status == errSecSuccess || status == errSecItemNotFound) {
 		return [(NSArray *)result autorelease];
 	} else {
-		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __func__, status);
+		NSLog(@"%s|SecItemCopyMatching: error(%d)", __func__, (int)status);
 		return nil;
 	}
 }
@@ -233,7 +233,7 @@ static NSString *defaultService;
         
         OSStatus status = SecItemDelete((CFDictionaryRef)itemToDelete);
         if (status != errSecSuccess) {
-            NSLog(@"%s|SecItemDelete: error(%ld)", __func__, status);
+            NSLog(@"%s|SecItemDelete: error(%d)", __func__, (int)status);
             NSLog(@"%@", itemToDelete);
         }
     }
